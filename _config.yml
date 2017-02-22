@@ -1,14 +1,39 @@
-title: "Causality: Objectives and Assesment"
-description: > # this means to ignore newlines until "baseurl:"
-    Causality: Objectives and Assessment (NIPS 2008 Workshop) December 12, 2008, Whistler, Canada
-baseurl: "/v6"
-url: "http://proceedings.mlr.press"
-logo: causality.jpg
+# Site settings
+# Auto generated from v6.bib
+---
+booktitle: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
+series: Journal of Machine Learning Research - Proceedings Track
 volume: 6
-date: 2010-02-18
+year: '2008'
+shortname: COA
+bibsource: http://jmlr.csail.mit.edu/proceedings/
+sections:
+- name: intro
+  title: Introduction
+- name: theory
+  title: Fundamentals and Algorithms
+- name: challenge
+  title: Challenge Contributions
+layout: proceedings
+key: GuyonIJDSB2008
+month: 0
+abstract: 
+origpdf: 
+pdf: "./GuyonIJDSB2008/GuyonIJDSB2008.pdf"
+editors:
+- given: Isabelle
+  family: Guyon
+- given: Dominik
+  family: Janzing
+- given: Bernhard
+  family: Sch\"{o}lkopf
+title: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
+conference: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
+email: ''
+description: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
+url: http://proceedings.mlr.press
+baseurl: "/v6"
 twitter_username: mlresearch
-github_username:  mlresearch
-
-# Build settings
+github_username: mlresearch
 markdown: kramdown
-theme: minima
+permalink: "/:title.html"
