@@ -1,304 +1,57 @@
 ---
 layout: default
-title: "JMLR W&amp;CP: Volume 6: Causality: Objectives and Assessment (NIPS 2008)"
 ---
-<div id="content">
-<table cellpadding="2" cellspacing="2" border="0" width="100%">
-       <tbody>
-         <tr>
-           <td valign="top">
-	     <h1>JMLR Workshop and Conference Proceedings: Volume 6</h1>
-	     <h2>Causality: Objectives and Assessment (NIPS 2008 Workshop)
-	       <br>December 12, 2008, Whistler, Canada</h2>
-<b><br>Editors: Isabelle Guyon, Dominik Janzing, and Bernhard Sch&ouml;lkopf.</b><br>
-           </td>
-           <td valign="top"><a href="http://clopinet.com/isabelle/Projects/NIPS2008/"><img
- src="causality.jpg" alt="Causality workbench logo" width="180"
- height="135" hspace="0" vspace="0" border="1">
-           <br>
-          <br>
-          </a>
-           </td>
-         </tr>
 
-  </tbody>
-</table>
+<div id="content" class="home">
 
-<table cellpadding="0" cellspacing="0" border="1" width="100%">
-      <tbody>
-        <tr>
-          <td valign="top" bgcolor="#ffffcc">
-          <a href="supplemental/JMLRWCP_V6_supplemental.html"><b>Supplemental  material (challenge, datasets, fact sheets)</b></a><br>
-          </td>
-        </tr>
+  <h1>Proceedings of Machine Learning Research</h1>
+  <h2>Volume {{ site.volume }}: {{ site.conference }} {{ site.start | date: "%B %-d" }} to {{ site.end | date: "%B %-d, %Y" }}, {{ site.address }}</h2>
 
-  </tbody>
-</table>
+  
+  <p><strong>Editors:
+      {% assign lastone = site.editor | last %}
+      {% for person in site.editor %}
+      {% include listperson.html %}
+      {% endfor %}
+  </strong></p>
 
-<p>
-<table cellspacing="0" cellpadding="4">
-      <tbody>
-         <tr>
-           <td>
-      <dl>
-      <center><h3> Introduction </h3></center>
-        <dt>Causality: Objectives and Assessment<font color="#ff6666"> </font></dt>
-         <dd><i><b>Isabelle Guyon, Dominik Janzing, and Bernhard Sch&ouml;lkopf</b></i>; 6:1-42, 2010.<br>
-      <a href="guyon10a.html">[abs]</a>
-      <a target="_blank" href="guyon10a/guyon10a.pdf">[pdf]</a>
-         </dd>
-      </dl>
+  <div id="sectionnav">
+    {% if site.sections %}
+    <p>Contents:</p>
+    <ul>
+      {% for section in site.sections %}
+      <li><a href="#{{ section.name }}">{{ section.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <label for="search-authors">Filter Authors:</label>
+    <input type="search" name="filter-authors" id="search-authors" value />
+    <label for="search-titles">Filter Titles:</label>
+    <input type="search" name="filter-titles" id="search-titles" value />
+  </div>
+  {% if site.sections %}
+  {% for section in site.sections %}
+  <h3 id="{{ section.name }}">{{ section.title }}</h3>
+  {% assign sorted = (site.posts | sort: 'firstpage') %}
+  {% for post in sorted %}
+    {% if section.name == post.section %}
+    {% include listpaper.html %}
+    {% endif %}
+    {% endfor %}
+  </dl>
+  {% endfor %}
+  {% endif %}
+  <dl>
+  {% assign sorted = (site.posts | sort: 'firstpage') %}
+  {% for post in sorted %}
+  {% unless post.section %} 
+  {% include listpaper.html %}
+  {% endunless %}
+  {% endfor %}
 
-      <p></p>
-           </td>
-         </tr>
-      <tr>
-           <td>
-      <dl>
-      <center><h3> Fundamentals and Algorithms </h3></center>
-        <dt>Causal Inference<font color="#ff6666"> </font></dt>
-        <dd><i><b>Judea Pearl</b></i>; 6:39-58, 2010. <font color="#ff6666"><br>
-         <a href="pearl10a.html">[abs]</a>
-         <a target="_blank" href="pearl10a/pearl10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-
-      <p></p>
-           </td>
-         </tr>
-       <tr>
-           <td>
-      <dl>
-        <dt>Beware of the DAG!<font color="#ff6666"> </font></dt>
-        <dd><i><b>A. Philip Dawid</b></i>; 6:59-86, 2010.<font color="#ff6666"><br>
-         <a href="dawid10a.html">[abs]</a>
-         <a target="_blank" href="dawid10a/dawid10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-
-      <p></p>
-           </td>
-         </tr>
-      <tr>
-           <td>
-      <dl>
-        <dt>Causal Discovery as a Game<font color="#ff6666"> </font></dt>
-        <dd><i><b>Frederick Eberhardt</b></i>; 6:87-96, 2010.<font color="#ff6666"><br>
-         <a href="eberhardt10a.html">[abs]</a>
-         <a target="_blank" href="eberhardt10a/eberhardt10a.pdf">[pdf]</a></font>
-         </dd>
-      </dl>
-
-      <p></p>
-           </td>
-         </tr>
-         <tr>
-           <td valign="top">
-      <dl>
-        <dt>Sparse Causal Discovery in Multivariate Time Series<font color="#ff6666"></font></dt>
-        <dd><b><i>Stefan Haufe, Klaus-Robert M&uuml;ller, Guido Nolte, Nicole Kr&auml;mer</i></b>; 6:97-106, 2010. <font color="#ff6666"><br>
-         <a href="haufe10a.html">[abs]</a>
-         <a target="_blank" href="haufe10a/haufe10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-           </td>
-         </tr>
-<tr>
-         <td valign="top">
-      <dl>
-        <dt>Inference of Graphical Causal Models: Representing the Meaningful Information of Probability Distributions<font color="#ff6666"></font></dt>
-        <dd><i><b>Jan Lemeire, Kris Steenhaut</b></i>; 6:107-120, 2010.<font color="#ff6666"><br>
-         <a href="lemeire10a.html">[abs]</a>
-         <a target="_blank" href="lemeire10a/lemeire10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-           </td>
-         </tr>
-        <tr>
-          <td valign="top">
-      <dl>
-        <dt>Bayesian Algorithms for Causal Data Mining<font color="#ff6666"></font></dt>
-        <dd><i><b>Subramani Mani, Constantin F. Aliferis, Alexander Statnikov</b></i>; 6:121-136, 2010.<font color="#ff6666"><br>
-         <a href="mani10a.html">[abs]</a>
-         <a target="_blank" href="mani10a/mani10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-          </td>
-        </tr>
-
-<tr>
-         <td valign="top">
-      <dl>
-        <dt>When causality matters for prediction<font color="#ff6666"></font></dt>
-        <dd><i><b>Robert E. Tillman, Peter Spirtes</b></i>; 6:137-146, 2010.<font color="#ff6666"><br>
-         <a href="tillman10a.html">[abs]</a>
-         <a target="_blank" href="tillman10a/tillman10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-           </td>
-         </tr>
-        <tr>
-          <td valign="top">
-      <dl>
-      <center><h3> Challenge contributions </h3></center>
-      <h4> Cause Effect Pairs task (Pairs of variables with known cause-effect relationships)</h4><br>
-        <dt>Distinguishing between cause and effect<font color="#ff6666"></font></dt>
-        <dd><i><b>Joris Mooij, Dominik Janzing</b></i>; 6:147-156, 2010.<font color="#ff6666"><br>
-         <a href="mooij10a.html">[abs]</a>
-         <a target="_blank" href="mooij10a/mooij10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-          </td>
-        </tr>
-
-<tr>
-         <td valign="top">
-      <dl>
-        <dt>Nonlinear acyclic causal models<font color="#ff6666"></font></dt>
-        <dd><i><b>Kun Zhang, Aaapo Hyv&auml;rinen</b></i>; 6:157-164, 2010.<font color="#ff6666"><br>
-         <a href="zhang10a.html">[abs]</a>
-         <a target="_blank" href="zhang10a/zhang10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-           </td>
-         </tr>
-        <tr>
-          <td valign="top">
-      <dl>
-      <h4> CYTO task (Protein signaling networks in human T-cells) </h4><br>
-        <dt>Recovering Cyclic Causal Structure<font color="#ff6666"></font></dt>
-        <dd><i><b>Sleiman Itani, Mesrob Ohannessian, Karen Sachs, Garry P. Nolan, Munther A. Dahleh</b></i>; 6:165-176, 2010.<font color="#ff6666"><br>
-         <a href="itani10a.html">[abs]</a>
-         <a target="_blank" href="itani10a/itani10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-          </td>
-        </tr>
-
-<tr>
-         <td valign="top">
-      <dl>
-        <dt>Causal learning without DAGs<font color="#ff6666"></font></dt>
-        <dd><i><b>David Duvenaud, Daniel Eaton, Kevin Murphy, Mark Schmidt</b></i>; 6:177-190, 2010.<font color="#ff6666"><br>
-         <a href="duvenaud10a.html">[abs]</a>
-         <a target="_blank" href="duvenaud10a/duvenaud10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-           </td>
-         </tr>
-        <tr>
-          <td valign="top">
-      <dl>
-      <h4> LOCANET tasks (Four tasks in genomics, socio-economics, and chemo-informatics)</h4><br>
-        <dt>Discover Local Causal Network around a Target to a Given Depth<font color="#ff6666"></font></dt>
-        <dd><i><b>You Zhou, Changzhang Wang, Jianxin Yin, Zhi Geng</b></i>; 6:191-202, 2010.<font color="#ff6666"><br>
-         <a href="zhou10a.html">[abs]</a>
-         <a target="_blank" href="zhou10a/zhou10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-          </td>
-        </tr>
-<tr>
-         <td valign="top">
-      <dl>
-        <dt>Fast Committee-Based Structure Learning<font color="#ff6666"></font></dt>
-        <dd><i><b>Ernest Mwebaze, John A. Quinn</b></i>; 6:203-214, 2010.<font color="#ff6666"><br>
-         <a href="mwebaze10a.html">[abs]</a>
-         <a target="_blank" href="mwebaze10a/mwebaze10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-           </td>
-         </tr>
-        <tr>
-          <td valign="top">
-      <dl>
-      <h4> SIGNET task (Plant signaling network) </h4><br>
-        <dt>SIGNET: Boolean Rile Deetermination for Abscisic Acid Signaling<font color="#ff6666"></font></dt>
-        <dd><i><b>Jerry Jenkins</b></i>; 6:215-224, 2010.<font color="#ff6666"><br>
-         <a href="jenkins10a.html">[abs]</a>
-         <a target="_blank" href="jenkins10a/jenkins10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-          </td>
-        </tr>
-
-<tr>
-         <td valign="top">
-      <dl>
-        <dt>The Use of Bernoulli Mixture Models for Identifying Corners of a Hypercube and Extracting Boolean Rules From Data<font color="#ff6666"></font></dt>
-        <dd><i><b>Mehreen Saeed</b></i>; 6:225-236, 2010.<font color="#ff6666"><br>
-         <a href="saeed10a.html">[abs]</a>
-         <a target="_blank" href="saeed10a/saeed10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-           </td>
-         </tr>
-        <tr>
-          <td valign="top">
-      <dl>
-        <dt>Reverse Engineering of Asynchronous Boolean Networks<font color="#ff6666"></font></dt>
-        <dd><i><b>Cheng Zheng, Zhi Geng</b></i>; 6:237-248, 2010.<font color="#ff6666"><br>
-         <a href="zheng10a.html">[abs]</a>
-         <a target="_blank" href="zheng10a/zheng10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-          </td>
-        </tr>
-
-<tr>
-         <td valign="top">
-      <dl>
-      <h4> TIED task (Artificial) </h4><br>
-        <dt>TIED: An Artificially Simulated Dataset with Multiple Markov Boundaries<font color="#ff6666"></font></dt>
-        <dd><i><b>Alexander Statnikov, Constantin F. Aliferis</b></i>; 6:249-256, 2010.<font color="#ff6666"><br>
-         <a href="statnikov10a.html">[abs]</a>
-         <a target="_blank" href="statnikov10a/statnikov10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-           </td>
-         </tr>
-        <tr>
-          <td valign="top">
-      <dl>
-      <h4> MIDS task (Artificial dymanic system) </h4><br>
-        <dt>Learning Causal Models That Make Correct Manipulation Predictions<font color="#ff6666"></font></dt>
-        <dd><i><b>Mark Voortman, Denver Dash, Marek J. Druzdzel</b></i>; 6:257-266, 2010.<font color="#ff6666"><br>
-         <a href="voortman10a.html">[abs]</a>
-         <a target="_blank" href="voortman10a/voortman10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-          </td>
-        </tr>
-
-<tr>
-         <td valign="top">
-      <dl>
-      <h4> NOISE task (Neurophysiology) </h4><br>
-        <dt>Comparison of Granger Causality and Phase Slope Index<font color="#ff6666"></font></dt>
-        <dd><i><b>Guido Nolte, Andreas Ziehe, Nicole Kr&auml;mer, Florin Popescu, Klaus-Robert M&uuml;ller</b></i>; 6:267-276, 2010.<font color="#ff6666"><br>
-         <a href="nolte10a.html">[abs]</a>
-         <a target="_blank" href="nolte10a/nolte10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-           </td>
-         </tr>
-        <tr>
-          <td valign="top">
-      <dl>
-      <h4> SECOM task (Manufacturing) </h4><br>
-        <dt>Causality Challenge: Benchmarking relevant signal components for effective monitoring and process control<font color="#ff6666"></font></dt>
-        <dd><i><b>Michael McCann, Yuhua Li, Liam Maguire, Adrian Johnston</b></i>; 6:277-288, 2010.<font color="#ff6666"><br>
-         <a href="mccann10a.html">[abs]</a>
-         <a target="_blank" href="mccann10a/mccann10a.pdf">[pdf]</a></font>
-        </dd>
-      </dl>
-          </td>
-        </tr>
-      </tbody>
-</table>
-
-     </p>
-     </div>
-     <div>
-     <b> Acknowlegements: </b> We are grateful to Karin Bierig for her help with formatting these proceedings.
-     </div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  
+</div>
+<!-- Search Widget -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="../js/search.js"></script>

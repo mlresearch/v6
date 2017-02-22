@@ -18,12 +18,12 @@ sections:
 - name: challenge
   title: Challenge Contributions
 layout: proceedings
-key: GuyonIJDSB2008
+id: GuyonIJDSB2008
 month: 0
 abstract: 
 origpdf: 
 pdf: "./GuyonIJDSB2008/GuyonIJDSB2008.pdf"
-editors:
+editor:
 - given: Isabelle
   family: Guyon
 - given: Dominik
