@@ -1,0 +1,26 @@
+---
+section: challenge
+title: The Use of Bernoulli Mixture Models for Identifying Corners of a Hypercube
+  and Extracting Boolean Rules From Data
+abstract: This paper describes the use of Bernoulli mixture models for extracting
+  boolean rules from data. Bernoulli mixtures identify high data density areas on
+  the corners of a hypercube. One corner represents a conjunction of literals in a
+  boolean clause and the set of all identified corners, of the hypercube, indicates
+  disjuncts of clauses to form a rule. Further class labels can be used to select
+  features or variables, in the individual conjuncts, that are relevant to the target
+  variable. This method was applied to the SIGNET dataset of the causality workbench
+  challenge. The dataset is derived from a biological signaling network with 21 time
+  steps and 43 random boolean variables. Results indicate that Bernoulli mixtures
+  are quite effective at extracting boolean rules from data.
+pdf: "./saeed10a/saeed10a.pdf"
+layout: inproceedings
+key: saeed10a
+month: 0
+firstpage: 225
+lastpage: 236
+origpdf: http://jmlr.org/proceedings/papers/v6/saeed10a/saeed10a.pdf
+sections: 
+authors:
+- given: Mehreen
+  family: Saeed
+---

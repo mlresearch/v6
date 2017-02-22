@@ -1,0 +1,25 @@
+---
+section: challenge
+title: 'SIGNET:  Boolean Rule Determination for Abscisic Acid Signaling'
+abstract: This paper describes the SIGNET dataset generated for the Causality Challenge.
+  Cellular signaling pathways are most elusive types of networks to access experimentally
+  due to the lack of methods for determining the state of a signaling network in an
+  intact living cell. Boolean network models are currently being used for the modeling
+  of signaling networks due to their compact formulation and ability to adequately
+  represent network dynamics without the need for chemical kinetics. The problem posed
+  in the SIGNET challenge is to determine the set of Boolean rules that describe the
+  interactions of nodes within a plant signaling network, given a set of 300 Boolean
+  pseudodynamic simulations of the true rules. The two solution methods that were
+  presented revealed that the problem can be solved to greater than 99\% accuracy.
+pdf: "./jenkins10a/jenkins10a.pdf"
+layout: inproceedings
+key: jenkins10a
+month: 0
+firstpage: 215
+lastpage: 224
+origpdf: http://jmlr.org/proceedings/papers/v6/jenkins10a/jenkins10a.pdf
+sections: 
+authors:
+- given: Jerry
+  family: Jenkins
+---

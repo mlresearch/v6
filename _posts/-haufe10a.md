@@ -1,0 +1,34 @@
+---
+section: theory
+title: Sparse Causal Discovery in Multivariate Time Series
+abstract: Our goal is to estimate causal interactions in multivariate time series.
+  Using vector autoregressive (VAR) models, these can be defined based on non-vanishing
+  coefficients belonging to respective time-lagged instances. As in most cases a parsimonious
+  causality structure is assumed, a promising approach to causal discovery consists
+  in fitting VAR models with an additional sparsity-promoting regularization. Along
+  this line we here propose that sparsity should be enforced for the subgroups of
+  coefficients that belong to each pair of time series, as the absence of a causal
+  relation requires the coefficients for all time-lags to become jointly zero. Such
+  behavior can be achieved by means of \emph{l}_{1,2}-norm regularized regression,
+  for which an efficient active set solver has been proposed recently. Our method
+  is shown to outperform standard methods in recovering simulated causality graphs.
+  The results are on par with a second novel approach which uses multiple statistical
+  testing.
+pdf: "./haufe10a/haufe10a.pdf"
+layout: inproceedings
+key: haufe10a
+month: 0
+firstpage: 97
+lastpage: 106
+origpdf: http://jmlr.org/proceedings/papers/v6/haufe10a/haufe10a.pdf
+sections: 
+authors:
+- given: Stefan
+  family: Haufe
+- given: Klaus-Robert
+  family: Müller
+- given: Guido
+  family: Nolte
+- given: Nicole
+  family: Krämer
+---

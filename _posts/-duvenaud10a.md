@@ -1,0 +1,29 @@
+---
+section: challenge
+title: Causal learning without DAGs
+abstract: Causal learning methods are often evaluated in terms of their ability to
+  discover a true underlying directed acyclic graph (DAG) structure. However, in general
+  the true structure is unknown and may not be a DAG structure.  We therefore consider
+  evaluating causal learning methods in terms of predicting the effects of interventions
+  on unseen test data.  Given this task, we show that there exist a variety of approaches
+  to modeling causality, generalizing DAG-based methods.  Our experiments on synthetic
+  and biological data indicate that some non-DAG models perform as well or better
+  than DAG-based methods at causal prediction tasks.
+pdf: "./duvenaud10a/duvenaud10a.pdf"
+layout: inproceedings
+key: duvenaud10a
+month: 0
+firstpage: 177
+lastpage: 190
+origpdf: http://jmlr.org/proceedings/papers/v6/duvenaud10a/duvenaud10a.pdf
+sections: 
+authors:
+- given: David
+  family: Duvenaud
+- given: Daniel
+  family: Eaton
+- given: Kevin
+  family: Murphy
+- given: Mark
+  family: Schmidt
+---

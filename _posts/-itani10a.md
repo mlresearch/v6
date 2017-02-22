@@ -1,0 +1,35 @@
+---
+section: challenge
+title: Structure Learning in Causal Cyclic Networks
+abstract: Cyclic graphical models are unnecessary for accurate representation of joint
+  probability distributions, but are often indispensable when a causal representation
+  of variable relationships is desired. For variables with a cyclic causal dependence
+  structure, DAGs are guaranteed not to recover the correct causal structure, and
+  therefore may yield false predictions about the outcomes of perturbations (and even
+  inference.) In this paper, we introduce an approach to generalize Bayesian Network
+  structure learning to structures with cyclic dependence. We introduce a structure
+  learning algorithm, prove its performance given reasonable assumptions, and use
+  simulated data to compare its results to the results of standard Bayesian network
+  structure learning. We then propose a modified, heuristic algorithm with more modest
+  data requirements, and test its performance on a real-life dataset from molecular
+  biology, containing causal, cyclic dependencies.
+pdf: "./itani10a/itani10a.pdf"
+layout: inproceedings
+key: itani10a
+month: 0
+firstpage: 165
+lastpage: 176
+origpdf: http://jmlr.org/proceedings/papers/v6/itani10a/itani10a.pdf
+sections: 
+authors:
+- given: Sleiman
+  family: Itani
+- given: Mesrob
+  family: Ohannessian
+- given: Karen
+  family: Sachs
+- given: Garry P.
+  family: Nolan
+- given: Munther A.
+  family: Dahleh
+---
