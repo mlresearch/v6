@@ -1,0 +1,14 @@
+title: "Causality: Objectives and Assesment"
+description: > # this means to ignore newlines until "baseurl:"
+    Causality: Objectives and Assessment (NIPS 2008 Workshop) December 12, 2008, Whistler, Canada
+baseurl: "/v6"
+url: "http://proceedings.mlr.press"
+logo: causality.jpg
+volume: 6
+date: 2010-02-18
+twitter_username: mlresearch
+github_username:  mlresearch
+
+# Build settings
+markdown: kramdown
+theme: minima
