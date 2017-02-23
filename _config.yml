@@ -20,18 +20,17 @@ sections:
 layout: proceedings
 id: GuyonIJDSB2008
 month: 0
-abstract: 
+abstract: ''
 origpdf: 
-pdf: "./GuyonIJDSB2008/GuyonIJDSB2008.pdf"
+pdf: http://proceedings.pmlr.press/GuyonIJDSB2008/GuyonIJDSB2008.pdf
 editor:
 - given: Isabelle
   family: Guyon
 - given: Dominik
   family: Janzing
 - given: Bernhard
-  family: Sch\"{o}lkopf
+  family: Schölkopf
 title: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
-conference: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
 email: ''
 description: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
 url: http://proceedings.mlr.press
@@ -40,8 +39,15 @@ twitter_username: mlresearch
 github_username: mlresearch
 markdown: kramdown
 permalink: "/:title.html"
-gitub:
+github:
   edit: true
+  repository: v6
+conference:
+  name: 
+  url: 
+  location: 
+  dates:
+  - 2008-12-12
 analytics:
   google:
     tracking_id: UA-92432422-1
