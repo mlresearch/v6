@@ -1,5 +1,6 @@
 ---
-booktitle: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
+booktitle: 'Proceedings of Workshop on Causality: Objectives and Assessment at NIPS
+  2008'
 series: Proceedings of Machine Learning Research
 volume: 6
 year: '2008'
@@ -26,9 +27,10 @@ editor:
   family: Janzing
 - given: Bernhard
   family: Schölkopf
-title: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
+title: 'Proceedings of Workshop on Causality: Objectives and Assessment at NIPS 2008'
 email: ''
-description: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
+description: 'Proceedings of Workshop on Causality: Objectives and Assessment at NIPS
+  2008'
 url: http://proceedings.mlr.press
 baseurl: "/v6"
 twitter_username: mlresearch
@@ -39,7 +41,7 @@ github:
   edit: true
   repository: v6
 conference:
-  name: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
+  name: 'Causality: Objectives and Assessment'
   url: 
   location: 
   dates:
