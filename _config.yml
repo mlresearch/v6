@@ -1,8 +1,6 @@
-# Site settings
-# Auto generated from v6.bib
 ---
 booktitle: 'Causality: Objectives and Assessment (NIPS 2008 Workshop)'
-series: Journal of Machine Learning Research - Proceedings Track
+series: Proceedings of Machine Learning Research
 volume: 6
 year: '2008'
 start: 2008-12-12
@@ -49,3 +47,5 @@ conference:
 analytics:
   google:
     tracking_id: UA-92432422-1
+# Site settings
+# Auto generated from v6.bib
