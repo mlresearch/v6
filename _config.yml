@@ -42,6 +42,7 @@ description: |
 
   Series Editors:
     Neil D. Lawrence
+date_str: 12 Dec
 url: http://proceedings.mlr.press
 baseurl: "/v6"
 twitter_username: mlresearch
@@ -51,6 +52,7 @@ permalink: "/:title.html"
 github:
   edit: true
   repository: v6
+bibtex_copy: true
 email: ''
 conference:
   name: 'Causality: Objectives and Assessment'
