@@ -27,10 +27,20 @@ editor:
   family: Janzing
 - given: Bernhard
   family: Schölkopf
-title: 'Proceedings of Workshop on Causality: Objectives and Assessment at NIPS 2008'
-email: ''
-description: 'Proceedings of Workshop on Causality: Objectives and Assessment at NIPS
-  2008, Whistler, Canada'
+title: Proceedings of Machine Learning Research
+description: |
+  Proceedings of Workshop on Causality: Objectives and Assessment at NIPS 2008
+    Held in Whistler, Canada on 12 December 2008
+
+  Published as Volume 6 by the Proceedings of Machine Learning Research on 18 February 2010.
+
+  Volume Edited by:
+    Isabelle Guyon
+    Dominik Janzing
+    Bernhard Schölkopf
+
+  Series Editors:
+    Neil D. Lawrence
 url: http://proceedings.mlr.press
 baseurl: "/v6"
 twitter_username: mlresearch
@@ -40,6 +50,7 @@ permalink: "/:title.html"
 github:
   edit: true
   repository: v6
+email: ''
 conference:
   name: 'Causality: Objectives and Assessment'
   url: 
