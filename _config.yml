@@ -20,6 +20,8 @@ layout: proceedings
 id: GuyonIJDSB2008
 month: 0
 abstract: ''
+tex_title: 
+title: Proceedings of Machine Learning Research
 editor:
 - given: Isabelle
   family: Guyon
@@ -27,7 +29,6 @@ editor:
   family: Janzing
 - given: Bernhard
   family: Schölkopf
-title: Proceedings of Machine Learning Research
 description: |
   Proceedings of Workshop on Causality: Objectives and Assessment at NIPS 2008
     Held in Whistler, Canada on 12 December 2008
