@@ -53,6 +53,8 @@ github:
   edit: true
   repository: v6
 bibtex_copy: true
+endnote_copy: true
+apa_copy: true
 email: ''
 conference:
   name: 'Causality: Objectives and Assessment'
