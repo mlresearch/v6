@@ -2,6 +2,7 @@
 booktitle: 'Proceedings of Workshop on Causality: Objectives and Assessment at NIPS
   2008'
 series: Proceedings of Machine Learning Research
+issn: 1938-7228
 volume: 6
 year: '2008'
 start: 2008-12-12
@@ -47,8 +48,11 @@ baseurl: "/v6"
 twitter_username: MLResearchPress
 github_username: mlresearch
 markdown: kramdown
+plugins:
+- jekyll-remote-theme
+remote_theme: lawrennd/proceedings
 permalink: "/:title.html"
-github:
+ghub:
   edit: true
   repository: v6
 display:
@@ -68,6 +72,6 @@ conference:
 analytics:
   google:
     tracking_id: UA-92432422-1
+orig_bibfile: "/Users/neil/mlresearch/bibtex.bib"
 # Site settings
-# Auto generated from v6.bib
----
+# Original source:  /Users/neil/mlresearch/bibtex.bib
